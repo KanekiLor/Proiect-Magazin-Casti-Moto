@@ -1,0 +1,14 @@
+https://www.bikerfunshop.ro/
+
+Pro:
+
+Site-ul este structurat pe grid.
+
+Are logo-ul implicit cu numele site-ului.
+
+Contra:
+
+Logo-ul si faviconul sunt diferite.
+
+Textul de pe imagini cam sare in ochi.
+

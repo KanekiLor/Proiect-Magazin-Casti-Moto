@@ -1,0 +1,14 @@
+https://www.shop4moto.ro/casti-moto
+
+Pro:
+
+Imi place meniul interactiv, ofera mai multa claritate si usurinta pentru navigare.
+
+Au niste efecte interesante cand muti cursorul pe un produs si lupa din stanga sus pentru subcategorii e interesanta.
+
+Contra:
+
+Efectele nu sunt adaugate si pe categorii.
+
+Dupa ce apesi pe lupa cand dai scroll se suprapun numerele cu bara de scroll.
+
