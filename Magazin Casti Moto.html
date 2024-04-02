@@ -1,82 +1,163 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <title>Magazin Casti Moto</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat cand ajungem la CSS -->
-    <meta name="keywords" content="Shark, Shoei, Arai, AGV, Bell, casti integrale, casti modulare, casti off-road, casti cu viziera, casti retro, viziere, Pinlock, comunicatoare interfon, jachete moto, manusi moto, pantaloni moto, bocanci moto, cruiser, sportbike, adventure, touring, EPS, DOT, ECE, sistem de ventilatie, Bluetooth, anti-fog, sistem de prindere rapida, garantie extinsa, bucuresti, review">
-    <meta name="description" content="Descopera o gama variata de casti moto la destinatia ta premium pentru pasionatii de motociclism." /> 
-    <meta name="author" content="Cristache Rares-Stefan"> 
-    <link rel="apple-touch-icon" sizes="180x180" href="./Resurse/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Resurse/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./Resurse/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./Resurse/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./Resurse/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="./Resurse/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#Ffff00">
-    <meta name="msapplication-config" content="./Resurse/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="./Resurse/css/style.css">
-  </head>
+<head>
+  <title>Magazin Casti Moto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Shark, Shoei, Arai, AGV, Bell, casti integrale, casti modulare, casti off-road, casti cu viziera, casti retro, viziere, Pinlock, comunicatoare interfon, jachete moto, manusi moto, pantaloni moto, bocanci moto, cruiser, sportbike, adventure, touring, EPS, DOT, ECE, sistem de ventilatie, Bluetooth, anti-fog, sistem de prindere rapida, garantie extinsa, bucuresti, review">
+  <meta name="description" content="Descopera o gama variata de casti moto la destinatia ta premium pentru pasionatii de motociclism.">
+  <meta name="author" content="Cristache Rares-Stefan">
+  <meta name="msapplication-TileColor" content="#Ffff00">
+  <meta name="msapplication-config" content="./Resurse/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" sizes="180x180" href="./Resurse/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Resurse/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Resurse/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./Resurse/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./Resurse/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./Resurse/favicon/favicon.ico">
+  <link rel="stylesheet" href="./Resurse/css/style.css">
+  <link rel="stylesheet" href="./Resurse/css/layout.css">
+  <link rel="stylesheet" href="./Resurse/css/nav.css">
+  <link rel="stylesheet" href="./Resurse/css/nav1000.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
-  <body>
-    <header>
-      <h1>Magazin Casti Moto</h1>
-      <nav>
-          <table id="meniu"> 
-                <tr>
-                    <hr>
-                    <th><a href="#acasa">Acasa</a></th>
-                    <th><a href="#produse">Produse</a></th>
-                    <th><a href="#contact">Contact</a></th>
-          </table>
-      </nav>
+</head>
+
+<body>
+  <header>
+    <h1>Magazin Casti Moto</h1><hr>
+    <nav>
+      <ul class="meniu"> 
+          <li><div id="#acasa">Acasa</div><div id="acasa-mediu"></div>
+               <ul>
+                 <li><a href="#retete">Retete</a></li>
+                 <li><a href="#anunturi">Anunturi</a></li>
+                 <li><a href="#orar">Orar</a></li>
+                 <li><a href="#produse">Produse</a></li>
+               </ul>
+          </li>
+          <li><a href="#promotii">Promotii</a></li>
+          <li><a href="#anunturi">Anunturi</a></li>
+          <li><a href="#orar">Orar</a></li>
+          <li><a href="#index-intrebari">Întrebări</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <hr>
   <main>
-      <section id="acasa">
-          <h2>Bine ati venit la Magazinul de Casti Moto</h2>
-          <p>Descopera o gama variata de casti moto la destinatia ta premium pentru pasionatii de motociclism. Produse de la cele mai renumite marci, inclusiv Shark, Shoei, Arai, AGV si Bell, te asteapta sa iti completezi echipamentul cu livrare la domiciliu.</p>
+    <div id="pagina">
+      <section id="acasa"> 
+        <h2>Bine ati venit la Magazinul de Casti Moto</h2>
+        <p>Descopera o gama variata de casti moto la destinatia ta <b>premium</b> pentru pasionatii de motociclism. Produse de la cele mai renumite marci, inclusiv Shark, Shoei, Arai, AGV si Bell, te asteapta sa iti completezi echipamentul cu livrare la domiciliu doar la <abbr title="Magazin Casti Moto">MCM</abbr>.</p>
       </section>
       <hr>
+      <section id="orar">
+        <div>
+          <table id="orar">
+            <caption>Orar Magazin</caption>
+            <thead>
+                <tr>
+                    <th>Interval Orar</th>
+                    <th>Luni - Vineri</th>
+                    <th>Sâmbătă</th>
+                    <th>Duminică</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 12:00</td>
+                    <td>Deschis</td>
+                    <td>Deschis</td>
+                    <td>Închis</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 14:00</td>
+                    <td>Deschis</td>
+                    <td>Deschis</td>
+                    <td>Închis</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 18:00</td>
+                    <td>Deschis</td>
+                    <td>Deschis</td>
+                    <td>Închis</td>
+                </tr>
+                <tr>
+                    <td>18:00 - 20:00</td>
+                    <td>Deschis</td>
+                    <td>Închis</td>
+                    <td>Închis</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+      </section>
       <section id="produse">
-          <h2>Produse</h2>
-          <p>Aici veti gasi castile moto disponibile in magazin.</p>
-          <article>
-            <h3>Casca Moto Shark</h3>
-            <img src="./Resurse/Imagini/cascamotoshark.png" alt="Casca Moto Shark" width="400" height="400">
-            <p>Modelul imbunatatit D-SKWAL 2 ofera imbunatatiri aerodinamice exceptionale datorita spoilerului, asigurand stabilitate optima in timpul conducerii. Pe langa aerodinamica, SHARK a imbunatatit si configuratia de ventilatie a castii, care este identica cu cea a modelului Skwal 2.</p>
-            <p>Caracteristici:</p>
-               <ul>
-                   <li>Carcasa castii este realizata din rasina termoplastica injectata;</li>
-                   <li>Sistem de ventilatie a castii cu 2 deschideri pentru intrarea aerului si 2 deschideri pentru iesirea aerului;</li>
-                   <li>Aerodinamica castii este realizata prin CFD (Computational Fluid Dynamics);</li>
-                   <li>Viziera castii are acoperire anti-zgariere;</li>
-                   <li>Posibilitate sa puneti Pinlock Max Vision - inclus in setul;</li>
-                   <li>Ochelari de soare incorporati cu protectie UV - UV380;</li>
-                   <li>Sistemul Autoseal pentru izolare fonica;</li>
-                   <li>Interiorul castii este realizat din BIRD EYES, iar sistemul EasyFit ofera confort fara compromisuri pentru soferii cu ochelari de vedere;</li>
-                   <li>Micro sistem de blocare;</li>
-                   <li>Loc pentru sistem Bluetooth;</li>
-                </ul>
-            <p><strong>Pret: 900 RON </strong> </p>
+        <h2>Produse</h2>
+        <p>Aici veti gasi castile moto disponibile in magazin.</p>
+        <article id="articole">
+          <h3>Casca Moto Shark</h3>
+          <picture>
+            <source srcset="./Resurse/Imagini/cascamotoshark-200x200.png" media="(max-width:700px)"/>
+            <source srcset="./Resurse/Imagini/cascamotoshark-200x200.png" media="(max-width:1200px)"/>
+            <img src="./Resurse/Imagini/cascamotoshark-500x500.png" alt="Casca Moto Shark">
+          </picture>
+          <p>Modelul imbunatatit D-SKWAL 2 ofera imbunatatiri aerodinamice exceptionale datorita spoilerului, asigurand stabilitate optima in timpul conducerii. Pe langa aerodinamica, SHARK a imbunatatit si configuratia de ventilatie a castii, care este identica cu cea a modelului Skwal 2.</p>
+          <p>Caracteristici:</p>
+          <ul>
+            <li>Carcasa castii este realizata din rasina termoplastica injectata;</li>
+            <li>Sistem de ventilatie a castii cu 2 deschideri pentru intrarea aerului si 2 deschideri pentru iesirea aerului;</li>
+            <li>Aerodinamica castii este realizata prin CFD (Computational Fluid Dynamics);</li>
+            <li>Viziera castii are acoperire anti-zgariere;</li>
+            <li>Posibilitate sa puneti Pinlock Max Vision - inclus in setul;</li>
+            <li>Ochelari de soare incorporati cu protectie UV - UV380;</li>
+            <li>Sistemul Autoseal pentru izolare fonica;</li>
+            <li>Interiorul castii este realizat din BIRD EYES, iar sistemul EasyFit ofera confort fara compromisuri pentru soferii cu ochelari de vedere;</li>
+            <li>Micro sistem de blocare;</li>
+            <li>Loc pentru sistem Bluetooth;</li>
+          </ul>
+          <p><strong>Pret: 900 RON </strong> </p>
         </article>
       </section>
       <hr>
       <section id="contact">
-          <h2>Contact</h2>
-          <p>Pentru orice intrebari sau informatii suplimentare, nu ezitati sa ne contactati:</p>
+        <h2>Contact</h2>
+        <p>Pentru orice intrebari sau informatii suplimentare, nu ezitati sa ne contactati:</p>
       </section>
+    </div>
   </main>
   <hr>
   <footer>
-      <address>
-          Telefon: <a href="tel:+40729096576">0729096576</a><br>
-          Adresa: <a href="https://goo.gl/maps/3ixRJWU5H4bgBvCs9" target="_blank">Bucuresti, Romania</a><br>
-          Email: <a href="mailto:contact@magazincastimotoro.ro">contact@magazincastimotoro.ro</a><br>
-      </address>
-      <small>&copy; 2024 Magazin Casti Moto</small>
+    <address>
+      Telefon: <a href="tel:+40729096576">0729096576</a><br>
+      Adresa: <a href="https://maps.app.goo.gl/jsK1giF1RUaDkVNSA" target="ifr-video">Bucuresti, Romania</a><br>
+      Email: <a href="mailto:contact@magazincastimotoro.ro">contact@magazincastimotoro.ro</a><br>
+    </address>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d712.2180872096761!2d26.100434024395586!3d44.435780634719805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFaculty%20of%20Mathematics%20and%20Computer%20Science!5e0!3m2!1sen!2sro!4v1709539388856!5m2!1sen!2sro" width="300" height="300" style="border:5px black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p><small>Copyright &copy; <time datetime="2024-02-26">2024</time> Magazin Casti Moto</small></p>
+    <hr>
+    <h5>freestyle</h5>
+    <a href="#" id="link-top"><div id="triunghi"></div></a><br>
+    <a href="fisier.txt" download="salut"> Protectia Consumatorului </a>
   </footer>
-  </body>
 
+  <section id="retete">
+    <div class="container-iframe">
+      <div class="taburi-iframe">
+        <a href="https://www.youtube.com/embed/qtlhdIfojmc" target="ifr-video">Reteta tort vanilie</a>
+        <a href="https://www.youtube.com/embed/dsJtgmAhFF4" target="ifr-video">Reteta tort ciocolata</a>
+        <a href="https://www.youtube.com/embed/Wtxbt-CpA2s" target="ifr-video">Reteta tort căpșuni</a>
+      </div>
+
+      <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/qtlhdIfojmc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+</body>
 </html>
