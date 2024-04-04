@@ -1,50 +1,48 @@
+#pagina {
+  display: grid;
+  grid-template-areas:
+    "presentation presentation presentation presentation" 
+    "products products products products"
+    "table table table announcements"
+    "users statistics site-info site-info";
+  gap: 20px;
+  
+}
 
-#layout-responsive {
-    display: grid;
+@media screen and (max-width: 992px) {
+  #pagina {
     grid-template-areas:
-      "presentation presentation presentation presentation" 
-      "presentation presentation presentation presentation" 
-      "products products products products"
-      "products products products products"
-      "events table table announcements"
-      "users statistics site-info site-info";
-    gap: 20px;
+      "presentation presentation"
+      "products products"
+      "table announcements"
+      "users statistics"
+      "site-info site-info";
   }
-  
-  @media screen and (max-width: 992px) {
-    #layout-responsive {
-      grid-template-areas:
-        "presentation"
-        "table"
-        "calendar"
-        "announcements"
-        "users"
-        "user-info"
-        "site-info"
-        "other-content";
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    #layout-responsive {
-      grid-template-areas:
-        "presentation"
-        "table"
-        "calendar"
-        "announcements"
-        "users"
-        "user-info"
-        "site-info"
-        "other-content";
-      grid-template-columns: 1fr;
-    }
-  }
+}
 
-#presentation { grid-area: presentation; }
-#table { grid-area: table; }
-#calendar { grid-area: calendar; }
-#announcements { grid-area: announcements; }
+@media screen and (max-width: 768px) {
+  #pagina {
+    grid-template-areas:
+      "presentation"
+      "products"
+      "table"
+      "announcements"
+      "users"
+      "statistics"
+      "site-info";
+    grid-template-columns: 1fr;
+  }
+}
+
+#pagina>*{
+  border: 2px solid black;
+  padding: 1em;
+}
+
+#acasa { grid-area: presentation; }
+#produse { grid-area: products; }
+#orar { grid-area: table; }
+#anunturi { grid-area: announcements; }
 #users { grid-area: users; }
-#user-info { grid-area: user-info; }
 #site-info { grid-area: site-info; }
-#other-content { grid-area: other-content; }
+#statistics { grid-area: statistics; }
