@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="./Resurse/css/style.css">
   <link rel="stylesheet" href="./Resurse/css/layout.css">
   <link rel="stylesheet" href="./Resurse/css/nav.css">
-  <link rel="stylesheet" href="./Resurse/css/nav1000.css" media="screen and (max-width:1000px)"/>
+  <link rel="stylesheet" href="./Resurse/css/nav700.css" type="text/css" media="screen and (max-width:700px)"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +33,13 @@
 <body>
   <header>
     <h1 class="stil">Magazin Casti Moto</h1><hr>
+    
     <nav>
-      <ul class="meniu"> 
+      <label id="hamburger" for="ch-menu" >
+        <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu" width="50px" height="50px">
+    </label>
+    <input id="ch-menu" type="checkbox">
+      <ul class="meniu">  
           <li><div id="acasa"><span class="fas fa-regular fa-house"></span>Acasa</div><div id="acasa-mediu"></div>
                <ul>
                  <li><a href="#retete">Casti</a></li>
@@ -43,18 +48,20 @@
                  <li><a href="#produse">Ghete</a></li>
                </ul>
           </li>
-          <li><a href="#promotii">Promotii</a></li>
+          <li><a href="#promotii">Promotii</a>
                 <ul>
                   <li><a href="#retete">50% discount</a></li>
                   <li><a href="#retete">30% discount</a></li>
                 </ul>
-          <li><a href="#anunturi">Produse Moto de Vara</a></li>
+          </li>
+          <li><a href="#anunturi">Produse Moto de Vara</a>
               <ul>
-                <li><a href="#retete">Casti</a></li>
-                <li><a href="#anunturi">Geci</a></li>
-                <li><a href="#orar">Manusi</a></li>
-                <li><a href="#produse">Ghete</a></li>
+                <li><a href="#retete">Casti Integrale</a></li>
+                <li><a href="#anunturi">Casti Flip-Up</a></li>
+                <li><a href="#orar">Casti Scuter</a></li>
+                <li><a href="#produse">Casti reduse</a></li>
               </ul>
+            </li>
           <li><a href="#orar">Orar</a></li>
           <li><a href="#site-info">Site Info</a></li>
           <li><a href="#contact">Contact</a></li>
