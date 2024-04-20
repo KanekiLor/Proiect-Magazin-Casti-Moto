@@ -1,39 +1,66 @@
 {
-	"cale_galerie":"resurse/imagini/galerie",
+	"cale_galerie":"/Resurse/Imagini/galerie",
 	"imagini": [
 		{
-			"fisier":"briose-frisca.png",
-			"descriere":"Brioșe",
-			"luni":["martie","februarie","noiembrie","aprilie"]
+			"fisier":"adventure.jpg",
+			"titlu":"Motocicleta de Adventure",
+			"descriere":"Adventurer",
+			"timp": "08:00-14:00"
 		},
 		{
-			"fisier":"clatite.png",
-			"descriere":"Clătite cu dulceață",
-			"luni":["ianuarie","februarie","iunie"]
-			
+			"fisier":"bobber.jpg",
+			"descriere":"Bobber",
+			"titlu":"Motocicleta de Chill",
+			"timp": "08:00-14:00"
 		},
 		{
-			"fisier":"gogosi.png",
-			"descriere":"Gogoși glazurate",
-			"luni":["ianuarie","noiembrie","iunie","martie","aprilie"]
+			"fisier":"chopper.jpg",
+			"descriere":"De batrani",
+			"titlu":"Motocicleta de Batrani",
+			"timp": "08:00-14:00"
 		},
 		{
-			"fisier":"tort-scortisoara.png",
-			"descriere":"Tort cu scorțisoară",
-			
-			"luni":["noiembrie","aprilie"]
+			"fisier":"enduro.jpg",
+			"descriere":"Enduro",
+			"titlu":"Motocicleta de Tineri",
+			"timp": "08:00-14:00"
 		},
 		{
-			"fisier":"prajitura-ciocolata.png",
-			"descriere":"Prăjitură cu ciocolată"
+			"fisier":"hayabusa.jpg",
+			"descriere":"Hayabusa",
+			"titlu":"Motocicleta de Teribilisti",
+			"timp": "08:00-14:00"
 		},
 		{
-			"fisier":"tarta-afine.png",
-			"descriere":"Tartă cu afine"
+			"fisier":"r6.jpg",
+			"descriere":"Motor de smecherie",
+			"titlu":"Motocicleta de dat pe o roata",
+			"timp": "10:00-19:00"
 		},
 		{
-			"fisier":"tort-trandafiri.png",
-			"descriere":"Tort special"
+			"fisier":"rc390.jpg",
+			"descriere":"Rc390",
+			"titlu":"Motocicleta de incepatori",
+			"timp": "10:00-19:00"
+		},
+		{
+			"fisier":"rc890.jpg",
+			"descriere":"Rc890 special",
+			"titlu":"Motocicleta de intermediari",
+			"timp": "10:00-19:00"
+		},
+		{
+			"fisier":"rs660.jpg",
+			"descriere":"Aprilla RS660",
+			"titlu":"Motocicleta de avansati",
+			"timp": "10:00-19:00"
+		},
+		{
+			"fisier":"zx-4rr.jpg",
+			"descriere":"ZX-4RR Ninja",
+			"titlu":"Motocicleta de incepatori",
+			"timp": "10:00-19:00"
 		}
+		
 	]
 }

@@ -1,15 +1,32 @@
 {
-  "name": "curs-5",
+  "name": "proiect",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proiect magazin casti moto",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Cristache Rares-Stefan",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "ejs": "^3.1.9",
-    "express": "^4.19.1"
-  }
+    "express": "^4.19.1",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "sass": "^1.74.1",
+    "sharp": "^0.33.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KanekiLor/Proiect-Magazin-Casti-Moto.git"
+  },
+  "keywords": [
+    "263",
+    "rares"
+  ],
+  "bugs": {
+    "url": "https://github.com/KanekiLor/Proiect-Magazin-Casti-Moto/issues"
+  },
+  "homepage": "https://github.com/KanekiLor/Proiect-Magazin-Casti-Moto#readme"
 }

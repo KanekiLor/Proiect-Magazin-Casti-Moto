@@ -2,7 +2,7 @@
 <html lang="ro">
 <head>
   <%- include("../fragmente/head.ejs") %>
-  <title>Magazin Casti Moto</title>
+  <title id="text-reflectat">Magazin Casti Moto</title>
   <meta name="keywords" content="Shark, Shoei, Arai, AGV, Bell, casti integrale, casti modulare, casti off-road, casti cu viziera, casti retro, viziere, Pinlock, comunicatoare interfon, jachete moto, manusi moto, pantaloni moto, bocanci moto, cruiser, sportbike, adventure, touring, EPS, DOT, ECE, sistem de ventilatie, Bluetooth, anti-fog, sistem de prindere rapida, garantie extinsa, bucuresti, review">
   <meta name="description" content="Descopera o gama variata de casti moto la destinatia ta premium pentru pasionatii de motociclism.">
   
@@ -63,9 +63,9 @@
         <article id="articole">
           <h3>Casca Moto Shark</h3>
           <picture>
-            <source srcset="./Resurse/Imagini/cascamotoshark-200x200.png" media="(max-width:700px)"/>
-            <source srcset="./Resurse/Imagini/cascamotoshark-200x200.png" media="(max-width:1200px)"/>
-            <img src="./Resurse/Imagini/cascamotoshark-500x500.png" alt="Casca Moto Shark">
+            <source srcset="/Resurse/Imagini/Produse/Shark D-Skwal 2.png" media="(max-width:700px)"/>
+            <source srcset="/Resurse/Imagini/Produse/Shark D-Skwal 2.png" media="(max-width:1200px)"/>
+            <img src="/Resurse/Imagini/Produse/Shark D-Skwal 2.png" alt="Casca Moto Shark">
           </picture>
           <p>Modelul imbunatatit D-SKWAL 2 ofera imbunatatiri aerodinamice exceptionale datorita spoilerului, asigurand stabilitate optima in timpul conducerii. Pe langa aerodinamica, SHARK a imbunatatit si configuratia de ventilatie a castii, care este identica cu cea a modelului Skwal 2.</p>
           <p>Caracteristici:</p>
@@ -84,38 +84,85 @@
           <p><strong>Pret: 900 RON </strong> </p>
         </article>
       </section>
-      <section id="site-info">
-        <h2>Contact</h2>
-        <p>Pentru orice intrebari sau informatii suplimentare, nu ezitati sa ne contactati:</p>
-      </section>  
-      <section id="statistics">
-        blablbllalbla
+      <section id="statistics" class="stil">
+        <h2>Statistici</h2>
+        <p>Această secțiune prezintă statistici relevante despre activitatea noastră. Descoperă câteva date interesante despre produsele noastre, performanța vânzărilor și alte informații relevante.</p>
     </section>
-    <section id="anunturi">
-      blablbllalbla  vineri la 10 sedinta iti va fi gratuit 3 la 3.  
+    
+    <section id="anunturi" class="stil">
+        <h2>Anunțuri</h2>
+        <p>Informații importante pentru clienții noștri: Vineri, la ora 10:00, va avea loc o ședință specială la care vei beneficia de oferte exclusive! Primești 3 produse la preț de 2 și încă 3 produse cadou la fiecare 3 achiziții. Nu rata această ocazie unică!</p>
     </section>
-      <section id="users">
-        blablbllalbla
+    <section id="site-info" class="stil">
+      <h2>Contact</h2>
+      <p>Pentru orice intrebari sau informatii suplimentare, nu ezitati sa ne contactati!</p>
+    </section>  
+
+    <section id="users" class="stil">
+        <h2>Utilizatori</h2>
+        <p>Această secțiune este dedicată utilizatorilor noștri. Află mai multe despre avantajele de a fi membru în comunitatea noastră, serviciile disponibile și modalitățile prin care ne preocupăm de nevoile tale.</p>
     </section>
+  
     </div>
     <div id="watermark">
-      <h1>Watermark</h1>
       <p>Cristache<br>Rares-Stefan</p>
   </div>
   </main>
+
   <footer>
+    <hr id="hr">
+    <section id="galerie-statica">
+      <div id="grid-galerie">
+        <% for (let imag of locals.imagini) { %>
+          <figure>
+            <picture>
+              <source srcset="<%= imag.fisier_mediu %>" media="(max-width:1200px)"/>
+              <img src="<%= imag.fisier %>" alt="motociclete">
+            </picture>
+            <figcaption><%= imag.descriere %></figcaption>
+          </figure>
+        <% } %>
+      </div> 
+    </section>
+  
+  <!-- <section id="galerie-statica">
+    <div id="grid-galerie">
+      
+      < for (let imag of locals.imagini) >{ %>
+        < for (let interval of imag.intervale) { 
+            var oraInceput = parseInt(interval.inceput.split(":")[0]);
+            var minutInceput = parseInt(interval.inceput.split(":")[1]);
+            var oraSfarsit = parseInt(interval.sfarsit.split(":")[0]);
+            var minutSfarsit = parseInt(interval.sfarsit.split(":")[1]);
+            
+            if ((oraCurenta > oraInceput || (oraCurenta === oraInceput && minuteCurente >= minutInceput)) && 
+                (oraCurenta < oraSfarsit || (oraCurenta === oraSfarsit && minuteCurente <= minutSfarsit))) { %>
+              <figure>
+                  <picture>
+                      <source srcset="<= imag.fisier_mediu %>" media="(max-width:1200px)"/>
+                      <img src="<= imag.fisier %>" alt="<= imag.descriere %>">
+                  </picture>
+                  <figcaption><= imag.descriere %></figcaption>
+              </figure>
+        < }
+        } %>
+      < } %>
+      
+    </div>
+  </section>
+   -->
   <%- include("../fragmente/footer.ejs") %> 
   </footer>
 
   <section id="retete">
     <div class="container-iframe">
       <div class="taburi-iframe">
-        <a href="https://www.youtube.com/embed/qtlhdIfojmc" target="ifr-video">Reteta tort vanilie</a>
-        <a href="https://www.youtube.com/embed/dsJtgmAhFF4" target="ifr-video">Reteta tort ciocolata</a>
-        <a href="https://www.youtube.com/embed/Wtxbt-CpA2s" target="ifr-video">Reteta tort căpșuni</a>
+        <a href="https://www.youtube.com/embed/7lTKO_UmBkk?si=s7zmaeXtlhLKNhKY" target="ifr-video">Rider manual</a>
+        <a href="https://www.youtube.com/embed/8p1ZJ_WBRkU?si=xa4iqe6bM54eWl3w" target="ifr-video">Durability test</a>
+        <a href="https://www.youtube.com/embed/ZpV2Bg-WX0w?si=Atv27BY01qwcXNbq" target="ifr-video">How to counter steer</a>
       </div>
 
-      <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/qtlhdIfojmc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/7lTKO_UmBkk?si=s7zmaeXtlhLKNhKY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </section>
 </body>
